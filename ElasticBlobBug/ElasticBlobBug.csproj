@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.8.4" />
+      <PackageReference Include="Elastic.Apm" Version="1.11.0" />
+      <PackageReference Include="Elastic.Apm.Azure.Storage" Version="1.11.0" />
+      <PackageReference Include="Elastic.Apm.Extensions.Hosting" Version="1.11.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appSettings.json" CopyToOutputDirectory="Always" />
+    </ItemGroup>
+    
+</Project>
